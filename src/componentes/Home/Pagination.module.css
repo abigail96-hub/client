@@ -1,0 +1,116 @@
+.numero{
+    width: 80%;
+    padding-bottom: 5px;
+    align-items:center;
+    display:inline-flex;
+    justify-content:center;
+    position: relative;
+    background-color: rgb(15 23 42);;
+    color: white;
+    font-size: medium;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.prev{
+    outline: 0;
+        font: inherit;
+        /* Personalize */
+        width: 4em;
+        height: 2.6em;
+        padding: 5 5em 1 5em;
+        background-color: transparent;
+        color: white;
+        border-radius: 0.35em;
+        box-shadow: 1 1 1em 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        margin-left: 20px;
+        align-self: center;
+        border-color: rgb(14 165 233);
+}
+
+.next{
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: 4em;
+    height: 2.6em;
+    padding: 5 5em 1 5em;
+    background-color: transparent;
+    color: white;
+    border-radius: 0.35em;
+    box-shadow: 1 1 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-left: 20px;
+    align-self: center;
+    border-color: rgb(14 165 233);
+
+} 
+
+#number{
+    height:25px;
+    width:32px;
+    border-radius: 100%;
+    font-family: 'Source Serif Pro', serif;
+    background-color: rgb(15 23 42);
+    border-color: rgb(14 116 144);
+    color: whitesmoke;
+   
+}
+
+.prev:hover{
+    cursor: pointer;
+    background-color: rgb(14 165 233) ;;
+}
+
+.next:hover{
+  cursor: pointer;
+  background-color: rgb(14 165 233) ;;
+
+}
+
+
+
+
+.x{
+    background-color: aqua;
+    border-color: whitesmoke;
+    background-color: azure;
+    
+    
+}
+
+
+
+
+@media screen and (max-width: 1260px){
+    #number{
+        height:28px;
+        width:28px;
+    } 
+    .bar ul{
+        margin-left: 100px;
+    }
+    .prev{
+        height:40px;
+        width:40px;
+    }
+    .next{
+        height:40px;
+        width:40px;
+        justify-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #number{
+        height:27px;
+        width:27px;
+    } 
+    .bar ul{
+        margin-left: -30px;
+        
+    }
+    .bar li{
+        margin-left: 0px;
+    }
+}

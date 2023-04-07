@@ -1,0 +1,95 @@
+.cuadro{
+    border: #c0c0c0 solid 2px;
+    border-radius: 10px;
+    background-color: rgba(173,181,189, 0.35);
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 221px;
+    font-family: 'Source Serif Pro', serif;
+    position: relative;
+    overflow: hidden;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: space-between;
+    color: aqua;
+    text-decoration: none;
+}
+
+.first{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 5px;
+
+}
+
+.flag{
+    height: 60px;
+    width: 90px;
+    border: transparent solid 1px;
+    justify-content: center;
+    border-radius: 20%;
+
+}
+
+.country {
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    align-self: center;
+    justify-content:center;
+    margin-left: 12px;
+    margin-right: 15px;
+    font-size: large;
+    height: 90px;
+}
+
+span {
+    margin-right: 2px;
+}
+
+.continent{
+    font-size: medium;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.btn {
+    width: 90%;
+    height: 30px;
+    background-color: transparent;
+    border: #c0c0c0 solid 1.8px;
+    border-radius: 10%;
+    color: #c0c0c0;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: black;
+    background-color: grey;
+}
+
+@media screen and (min-width: 1550px) {
+    .cuadro{
+        height: 250px;
+        width: 230px;
+        gap: 15px;
+    }
+}
+
+/* @media screen and (min-height: 720px){
+    .all {
+        height: 100vh;
+    }
+} */

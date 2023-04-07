@@ -1,0 +1,70 @@
+.back {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.95;
+    background-size: auto;
+}
+
+#notFoundCountry{
+    max-width: 100%;
+    border: black groove 1.8px;
+    text-align: center;
+    opacity: 0.65;
+}
+
+.back img{
+    border: red solid 5px;
+    margin-top: 50px;
+}
+
+#btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#btn button {
+    width: 155px;
+    height: 30px;
+    background-color: transparent;
+    border: black solid 1.8px;
+    border-radius: 10%;
+    color: aqua;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 300;
+    font-size: 17px;
+    animation: fadein 3s;
+    justify-self: center;
+}
+
+#btn button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: grey;
+}
+
+@keyframes fadein {
+    0% {
+        opacity:0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #btn button {
+        background-color: grey;
+        border: #c0c0c0 solid 1.8px;
+        color: #c0c0c0;
+    }
+    
+    #btn button:hover {
+        color: black;
+        background-color: transparent;
+    }
+}

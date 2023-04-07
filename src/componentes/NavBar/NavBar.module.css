@@ -1,0 +1,128 @@
+.navbar {
+    /* margin-top: -3px; */
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: 'Source Serif Pro', serif;
+    color: white;
+    background-color:  rgb(14 165 233);
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 0.10fr 0.15fr;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: rgb(14 165 233) solid 1px;
+      
+}
+
+.title {
+    margin-left: 40px;
+    margin-bottom: 5px;
+    align-self:flex-end;
+    font-size:x-large;
+    font-weight:500;
+    color: whitesmoke;
+}
+
+.countries{
+    width: 150px;
+    height: 30px;
+    background-color: transparent;
+    border: rgb(34 211 238) solid 1.8px;
+    border-radius: 10%;
+    color: whitesmoke;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 300;
+    font-size: 17px;
+    animation: fadein 2s;
+}
+
+
+.btn1 {
+    width: 200px;
+    height: 30px;
+    background-color: transparent;
+    border: rgb(34 211 238) solid 1.8px;
+    border-radius: 13%;
+    color: whitesmoke;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+    font-size: 17px;
+    animation: fadein 2s;
+}
+
+.btn1:hover {
+    cursor: pointer;
+    color:  rgb(15 23 42);
+    background-color: whitesmoke;
+}
+
+.btn2 {
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border: rgb(14 165 233) solid 1.8px;
+    border-radius: 20%;
+    margin-right: 20px;
+    color: whitesmoke;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 300;
+    font-size: 17px;
+    animation: fadein 2s;
+}
+
+.btn2:hover {
+    cursor: pointer;
+    color: rgb(15 23 42);
+    background-color:  rgb(14 165 233) solid 1.8px;
+}
+
+.btn3 {
+    width: 178px;
+    height: 30px;
+    background-color: transparent;
+    border: rgb(14 165 233) solid 1.8px;
+    border-radius: 20%;
+    color: whitesmoke;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 300;
+    font-size: 20px;
+    animation: fadein 2s;
+}
+
+.btn3:hover {
+    cursor: pointer;
+    color: rgb(15 23 42);
+    background-color:  rgb(14 165 233) solid 1.8px;
+
+}
+
+@keyframes fadein {
+    0% {
+        opacity:0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@media screen and (max-width: 500px){
+    /* .navbar{
+        display: flex;
+        flex-direction: row;
+    } */
+    .btn1 {
+        margin-left: 20px;;
+    }
+    .title{
+        align-content: center;
+        font-size: large;
+        justify-self: flex-start;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+}

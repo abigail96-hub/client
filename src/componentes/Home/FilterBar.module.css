@@ -1,0 +1,120 @@
+.all{
+    border-right: #c0c0c0 solid 1.8px;
+    border-bottom: #c0c0c0 solid 1.8px;
+    margin-left: 10px;
+    margin-right: 0px;
+    height: 430px;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-rows: 7fr 7fr 7fr 7fr;
+    align-items: center;
+}
+
+.btn span{
+    color: white;
+}
+
+.btn{
+    margin-top: -20px;
+    align-self: center;
+    justify-self:flex-start;
+}
+
+.btn button{
+    margin-top: 10px;
+    align-self: center;
+    width: 130px;
+    height: 30px;
+    background-color: transparent;
+    border: #c0c0c0 solid 1.8px;
+    border-radius: 10%;
+    color: #c0c0c0;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 300;
+    font-size: 17px;
+    animation: fadein 2s;
+}
+
+#f1 {
+    margin-top: 5px;
+}
+
+.btn button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: grey;
+}
+
+p {
+    color: white;
+    font-family: 'Source Serif Pro', serif;
+}
+
+select{
+    width: 180px;
+    height: 28px;
+    border-radius: 10%;
+    background: rgba(233, 236, 239, 0.8);
+    font-family: 'Source Serif Pro', serif;
+    cursor: pointer;
+}
+
+option{
+    background: rgba(233, 236, 239, 0.8);;
+    font-family: 'Source Serif Pro', serif;
+}
+
+@keyframes fadein {
+    0% {
+        opacity:0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .search{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    select{
+        width: 150px;
+        height: 25px;
+    }
+    .btn button{
+        width: 120px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .all{
+        border-right: none;
+        border-bottom: none;
+        display: inline-flex;
+        height: min-content;
+        align-items: center;
+    }
+
+    .all div{
+        align-self: flex-end;
+    }
+    .search{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    select{
+        width: 130px;
+        height: 25px;
+    }
+    .btn button{
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+    }
+}

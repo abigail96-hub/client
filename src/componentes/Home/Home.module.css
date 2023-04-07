@@ -1,0 +1,232 @@
+.all {
+    /* background-image: url('../../images/darkmap3.jpg'); */
+    /* background-color: rgb(41 37 36); */
+    background-color: rgb(15 23 42);
+    background-size: cover;
+    height: 100vh;
+    width: fit-content;
+    color: azure;
+}
+
+.container{
+    /* border: red solid 2px; */
+    position: relative;
+    padding-top: 60px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    opacity: 0.95;
+    color: azure;
+}
+
+.horizontal{
+    display:flex;
+    flex-direction: row;
+}
+
+.container .cards{
+    /* border: white solid 5px; */
+    margin-left: 25px;
+    margin-top: 25px;
+    right: 20px;
+    height: min-content;
+    display: grid;
+    grid-gap: 22px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    color: #ee9494;
+}
+
+#noCountries{
+    width: 450px;
+}
+
+#noCountries p{
+    margin-top: 15px;
+    margin-left: 35px;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+}
+
+
+
+
+.footer{
+  
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+
+}
+
+
+.logo{
+   height: 40px;
+   margin-bottom: 1rem;
+   border-radius: 5px;
+
+}
+
+
+
+
+.socialiconscontainer, .menu{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: rem;
+    margin-left: 10rem;
+    margin-top: 0.5rem;
+}
+
+.socialicon{
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    border: 1px solid #f2f2f2;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    margin-bottom: 1px;
+   
+
+}
+
+
+.socialicon:hover{
+    background-color: #121212;
+    filter: invert(1);
+}
+
+.socialicon:nth-of-type(2){
+    background-image: url(http://www.freepnglogos.com/uploads/linkedin-blue-style-logo-png-0.png);
+    margin-right: 5rem;
+
+ 
+}
+
+.socialicon:nth-of-type(1){
+    background-image: url(https://umaar.github.io/experiments/github-3d-logo/render-2.jpg);
+    margin-right: 3rem;
+   
+}
+.socialicon:nth-of-type(3){
+    background-image: url(https://assets.soyhenry.com/logoOG.png);
+    margin-right: 1.5rem;
+ 
+
+  
+}
+
+
+
+
+
+.menu{
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 30px;
+    margin-top: 2rem;
+}
+
+.item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+    margin-top: 0rem;
+}
+
+.item:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+    margin-left: 18rem;
+}
+
+
+
+
+@media screen and (min-width: 1750px) {
+    .container .cards{
+        /* border: white solid 5px; */
+        margin-left: 50px;
+        margin-top: 25px;
+        right: 20px;
+        height: min-content;
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 1520px) {
+    .all {
+        background-size: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (min-height: 720px){
+    .all {
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 1495px){
+    .all {
+        background-size: auto;
+        height: fit-content;
+    }
+    .container .cards{
+        margin-left: 20px;
+        margin-top: 5px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1260px){
+    .container .cards{
+        margin-left: 15px;
+        margin-top: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .container .cards{
+        margin-left: 10px;
+        margin-top: 5px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 680px){
+
+    .horizontal{
+        flex-direction: column;
+    }
+    .container .cards{
+        margin-top: 15px;
+    }
+}
