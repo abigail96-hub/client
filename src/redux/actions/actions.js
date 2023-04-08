@@ -1,10 +1,11 @@
 import axios from 'axios';
 
 
+export const URL = 'https://back-countries-cz7090hao-abigail96-hub.vercel.app/';
 export function getCountries(setisLoading){
 return async function (dispatch){
     try {
-      let allCountries = await axios.get("http://localhost:3001/country")
+      let allCountries = await axios.get(`${URL}/country`)
       dispatch({
         type: 'GET_COUNTRIES',
         payload: allCountries.data
@@ -25,7 +26,7 @@ return async function (dispatch){
 export function getCountryById(id){
   return async function(dispatch){
     try{
-        let countryDetail = await axios.get(`http://localhost:3001/country/${id}`)
+        let countryDetail = await axios.get(`${URL}country/${id}`)
         return dispatch({
             type: 'GET_COUNTRY_DETAIL',
             payload: countryDetail.data
@@ -44,7 +45,7 @@ export function getCountryByName(name){
 
   return async function(dispatch){
     try{
-        let countryByName = await axios.get(`http://localhost:3001/country?name=${name}`)
+        let countryByName = await axios.get(`${URL}country?name=${name}`)
         return dispatch({
             type: 'GET_COUNTRY_BY_NAME',
             payload: countryByName.data
@@ -76,7 +77,7 @@ export function orderBy(payload){
 export function postActivity(payload){
   return async function (dispatch){
       try{
-          let activity = await axios.post(`http://localhost:3001/activity/`, payload)
+          let activity = await axios.post(`${URL}activity/`, payload)
           return dispatch({
               type: 'POST_ACTIVITY',
               payload: activity.data
@@ -96,7 +97,7 @@ export function getActivities(){
   
   return async function (dispatch) {
       try{
-          let allActivities = await axios.get("http://localhost:3001/activity/");
+          let allActivities = await axios.get(`${URL}activity/`);
           // console.log("---------",allActivities.data)
           return dispatch({
               type: 'GET_ACTIVITIES',
